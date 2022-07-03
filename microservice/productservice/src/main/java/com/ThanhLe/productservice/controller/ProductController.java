@@ -1,14 +1,14 @@
 package com.ThanhLe.productservice.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.ThanhLe.productservice.model.Products;
+import io.tej.SwaggerCodgen.api.ProductApi;
+import io.tej.SwaggerCodgen.model.Product;
+import org.springframework.http.ResponseEntity;
 
-@RestController
-@RequestMapping("/product")
-public class ProductController {
-    @GetMapping("/getAll")
-    public String getAll() {
-        return "Service product";
+
+public class ProductController implements ProductApi {
+    @Override
+    public ResponseEntity<String> _addProduct(Product product){
+        return ResponseEntity.ok("200 ok"+product.getName());
     }
 }

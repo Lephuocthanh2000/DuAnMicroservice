@@ -11,7 +11,13 @@
 	<groupId>com.Thanhle</groupId>
 	<artifactId>microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>microservice</name>
+	<description>microservice project for Spring Boot</description>
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+
 	<modules>
 		<module>dicoveryservice</module>
 		<module>productservice</module>
@@ -19,10 +25,6 @@
 		<module>categoryservice</module>
 		<module>gatewayservice</module>
 	</modules>
-	<description>microservice project for Spring Boot</description>
-	<properties>
-		<java.version>17</java.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
