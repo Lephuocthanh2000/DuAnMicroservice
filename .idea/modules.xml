@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DuAnMicroservice.iml" filepath="$PROJECT_DIR$/.idea/DuAnMicroservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/categoryservice/categoryservice.iml" filepath="$PROJECT_DIR$/microservice/categoryservice/categoryservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/configservice/configservice.iml" filepath="$PROJECT_DIR$/microservice/configservice/configservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/dicoveryservice/dicoveryservice.iml" filepath="$PROJECT_DIR$/microservice/dicoveryservice/dicoveryservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/gatewayservice/gatewayservice.iml" filepath="$PROJECT_DIR$/microservice/gatewayservice/gatewayservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/microservice.iml" filepath="$PROJECT_DIR$/microservice/microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/productservice/productservice.iml" filepath="$PROJECT_DIR$/microservice/productservice/productservice.iml" />
+    </modules>
+  </component>
+</project>

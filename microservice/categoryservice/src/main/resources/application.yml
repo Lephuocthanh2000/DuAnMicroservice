@@ -1,18 +1,28 @@
-server:
-  port: 8085
+
 spring:
   application:
     name: category-service
-# datasourse
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  main:
+    allow-circular-references: true
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
       ddl-auto: update
       show-sql: true
+
   datasource:
-    url: jdbc:postgresql://database:5432/thuongmaidientu
-    username: "postgres"
-    password: "123456""
+    url: jdbc:postgresql://localhost:5432/thuongmaidientu
+    username: postgres
+    password: 123456
     driver-class-name: org.postgresql.Driver
+    platform: postgresql
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://localhost:8761/eureka'
+server:
+  port: 8086
